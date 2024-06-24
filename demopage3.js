@@ -25,5 +25,5 @@ function vote(candidate) {
     }
 
     // Redirect to another page
-    window.location.href = 'thankyou.html';
+    window.location.href = 'Republican.html';
 }
