@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Results</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        input[type="text"] {
+            width: 100px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="demo.css"/>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>S/N</th>
+        <th>CANDIDATES</th>
+        <th>COUNT</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Action Alliance</td>
+        <td><input type="text" id="aa-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>African Action Congress</td>
+        <td><input type="text" id="aac-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Accord Party</td>
+        <td><input type="text" id="ap-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>African Democratic Congress</td>
+        <td><input type="text" id="adc-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Action Democratic Party</td>
+        <td><input type="text" id="adp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>All Progressives Congress</td>
+        <td><input type="text" id="apc-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>All Progressives Grand Alliance</td>
+        <td><input type="text" id="apga-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Allied Peoples Movement</td>
+        <td><input type="text" id="apm-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Action Peoples Party</td>
+        <td><input type="text" id="app-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Boot Party</td>
+        <td><input type="text" id="bp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Labour Party</td>
+        <td><input type="text" id="lp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>New Nigeria People's Party</td>
+        <td><input type="text" id="nnpp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>National Rescue Movement</td>
+        <td><input type="text" id="nrm-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>People's Democratic Party</td>
+        <td><input type="text" id="pdp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>People's Redemption Party</td>
+        <td><input type="text" id="prp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>Social Democratic Party</td>
+        <td><input type="text" id="sdp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Youth Progressives Party</td>
+        <td><input type="text" id="ypp-count" readonly/></td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>Zenith Labour Party</td>
+        <td><input type="text" id="zlp-count" readonly/></td>
+    </tr>
+</table>
+
+<script>
+    // Fetch the votes from localStorage and display them
+    document.getElementById('aa-count').value = localStorage.getItem('aa') || 0;
+    document.getElementById('aac-count').value = localStorage.getItem('aac') || 0;
+    document.getElementById('ap-count').value = localStorage.getItem('ap') || 0;
+    document.getElementById('adc-count').value = localStorage.getItem('adc') || 0;
+    document.getElementById('adp-count').value = localStorage.getItem('adp') || 0;
+    document.getElementById('apc-count').value = localStorage.getItem('apc') || 0;
+    document.getElementById('apga-count').value = localStorage.getItem('apga') || 0;
+    document.getElementById('apm-count').value = localStorage.getItem('apm') || 0;
+    document.getElementById('app-count').value = localStorage.getItem('app') || 0;
+    document.getElementById('bp-count').value = localStorage.getItem('bp') || 0;
+    document.getElementById('lp-count').value = localStorage.getItem('lp') || 0;
+    document.getElementById('nnpp-count').value = localStorage.getItem('nnpp') || 0;
+    document.getElementById('nrm-count').value = localStorage.getItem('nrm') || 0;
+    document.getElementById('pdp-count').value = localStorage.getItem('pdp') || 0;
+    document.getElementById('prp-count').value = localStorage.getItem('prp') || 0;
+    document.getElementById('sdp-count').value = localStorage.getItem('sdp') || 0;
+    document.getElementById('ypp-count').value = localStorage.getItem('ypp') || 0;
+    document.getElementById('zlp-count').value = localStorage.getItem('zlp') || 0;
+</script>
+<h6 style="margin-left: 1150px;"><img src="c3dlogo.png" alt="logo" height="50px" width="120px"/><br/>Powered by Creativ360dymensionz!</h6>
+</body>
+</html>

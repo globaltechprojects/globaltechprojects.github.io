@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos</title>
+    <style>
+        table {
+            width: 100%; 
+        }
+        td {
+            border: 2px solid black;
+            width: 16.66%;
+            height: 150px; 
+            text-align: center;
+            vertical-align: middle;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="demo.css"/>
+</head>
+<body>
+<table>
+    <tr>
+        <td><img src="logo_images/Aa.jpeg" alt="Action Alliance" onclick="vote('aa')"></td>
+        <td><img src="logo_images/Aac.jpeg" alt="African Action Congress" onclick="vote('aac')"></td>
+        <td><img src="logo_images/Accord.jpeg" alt="Accord Party" onclick="vote('ap')"></td>
+        <td><img src="logo_images/Adc.jpeg" alt="African Democratic Congress" onclick="vote('adc')"></td>
+        <td><img src="logo_images/Adp.jpeg" alt="Action Democratic Party" onclick="vote('adp')"></td>
+        <td><img src="logo_images/Apc.jpeg" alt="All Progressives Congress" onclick="vote('apc')"></td>
+    </tr>
+    <tr>
+        <td><img src="logo_images/Apga.jpeg" alt="All Progressives Grand Alliance" onclick="vote('apga')"></td>
+        <td><img src="logo_images/Apm.jpeg" alt="Allied Peoples Movement" onclick="vote('apm')"></td>
+        <td><img src="logo_images/App.jpeg" alt="Action Peoples Party" onclick="vote('app')"></td>
+        <td><img src="logo_images/Bp.jpeg" alt="Boot Party" onclick="vote('bp')"></td>
+        <td><img src="logo_images/Labour.jpeg" alt="Labour Party" onclick="vote('lp')"></td>
+        <td><img src="logo_images/Nnpp.jpeg" alt="New Nigeria People's Party" onclick="vote('nnpp')"></td>
+    </tr>
+    <tr>
+        <td><img src="logo_images/Nrm.jpeg" alt="National Rescue Movement" onclick="vote('nrm')"></td>
+        <td><img src="logo_images/Pdp.jpeg" alt="People's Democratic Party" onclick="vote('pdp')"></td>
+        <td><img src="logo_images/Prp.jpeg" alt="People's Redemption Party" onclick="vote('prp')"></td>
+        <td><img src="logo_images/Sdp.jpeg" alt="Social Democratic Party" onclick="vote('sdp')"></td>
+        <td><img src="logo_images/Ypp.jpeg" alt="Youth Progressives Party" onclick="vote('ypp')"></td>
+        <td><img src="logo_images/Zlp.jpeg" alt="Zenith Labour Party" onclick="vote('zlp')"></td>
+    </tr>
+</table>
+<script>
+    function vote(party) {
+        // Get the current vote count from localStorage
+        let votes = localStorage.getItem(party) || 0;
+        votes = parseInt(votes) + 1;
+        localStorage.setItem(party, votes);
+
+        // Redirect to results page
+        window.location.href = 'results3.html';
+    }
+</script>
+<h6 style="margin-left: 1150px;"><img src="c3dlogo.png" alt="logo" height="50px" width="120px"/><br/>Powered by Creativ360dymensionz!</h6>
+</body>
+</html>
