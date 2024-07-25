@@ -1,5 +1,6 @@
 table, th, td{
-    border: 2px solid black;
+    border: 0.1px solid wheat;
+    border-collapse: collapse;
 }
 table{
     width: 100%;
@@ -7,19 +8,23 @@ table{
     color: white;
 }
 th, td{
-    background: green;
+    background: white;
+    color:green;
+    font-size: 35px;
+    text-align: center;
+    padding: 25px;
 }
 .footer_flex{
     display:flex;
 }
 .body{
-    background: green;
+    background: white;
 }
 h1{
-   color:white;
+   color:green;
    text-align: center;
    font-family: trebuchet ms; 
-   font-size: 125px;
+   font-size: 75px;
 }
 h3{
     color: yellow;
@@ -31,6 +36,25 @@ button{
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: 15px;
-    width: 150px;
+    padding: 50px;
+    width: 200px;
+    background-color: green;
+    border: none;
+}
+
+img{
+    width: 125px;
+    height: 125px;
+}
+
+.hidden{
+    display: none;
+}
+
+.image{
+    height:100px;
+    width:100px;
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
 }
