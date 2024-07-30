@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presidential Election.</title>
+    <title>House Of Assembly</title>
     <style>
         table {
             width: 100%; 
@@ -24,9 +24,9 @@
     <link rel="stylesheet" type="text/css" href="demo.css"/>
 </head>
 <body>
-    <h1>PRESIDENTIAL ELECTION</h1>
+    <h1>HOUSE OF ASSEMBLY ELECTION</h1>
 <table>
-    <tr>
+    <tr style="padding:25px;">
         <td><img src="logo_images/Aa.jpeg" alt="Action Alliance" onclick="vote('aa')"><h2 style="color:red;">AA</h2></td>
         <td><img src="logo_images/Aac.jpeg" alt="African Action Congress" onclick="vote('aac')"><h2 style="color:brown;">AAC</h2></td>
         <td><img src="logo_images/Accord.jpeg" alt="Accord Party" onclick="vote('ap')"><h2 style="color:green;">AP</h2></td>
@@ -34,7 +34,7 @@
         <td><img src="logo_images/Adp.jpeg" alt="Action Democratic Party" onclick="vote('adp')"><h2 style="color:blue;">ADP</h2></td>
         <td><img src="logo_images/Apc.jpeg" alt="All Progressives Congress" onclick="vote('apc')"><h2 style="color:red;">APC</h2></td>
     </tr>
-    <tr>
+    <tr style="padding:25px;">
         <td><img src="logo_images/Apga.jpeg" alt="All Progressives Grand Alliance" onclick="vote('apga')"><h2 style="color:green">APGA</h2></td>
         <td><img src="logo_images/Apm.jpeg" alt="Allied Peoples Movement" onclick="vote('apm')"><h2 style="color:navy">APM</h2></td>
         <td><img src="logo_images/App.jpeg" alt="Action Peoples Party" onclick="vote('app')"><h2 style="color:red;">APP</h2></td>
@@ -42,7 +42,7 @@
         <td><img src="logo_images/Labour.jpeg" alt="Labour Party" onclick="vote('lp')"><h2 style="color:green">LP</h2></td>
         <td><img src="logo_images/Nnpp.jpeg" alt="New Nigeria People's Party" onclick="vote('nnpp')"><h2 style="color:green">NNPP</h2></td>
     </tr>
-    <tr>
+    <tr style="padding:25px;">
         <td><img src="logo_images/Nrm.jpeg" alt="National Rescue Movement" onclick="vote('nrm')"><h2 style="color:black">NRM</h2></td>
         <td><img src="logo_images/Pdp.jpeg" alt="People's Democratic Party" onclick="vote('pdp')"><h2 style="color:green">PDP</h2></td>
         <td><img src="logo_images/Prp.jpeg" alt="People's Redemption Party" onclick="vote('prp')"><h2 style="color:black">PRP</h2></td>
@@ -51,7 +51,6 @@
         <td><img src="logo_images/Zlp.jpeg" alt="Zenith Labour Party" onclick="vote('zlp')"><h2 style="color:green">ZLP</h2></td>
     </tr>
 </table><br><br>
-<button><a href="welcome.html" style="color: white; font-size: 20px; text-align: center; text-decoration: none;"><h2 class="pres_elect_btn"> << Back To Welcome Page.</h2></a></button>
 <script>
     function vote(party) {
         // Get the current vote count from localStorage
@@ -60,7 +59,7 @@
         localStorage.setItem(party, votes);
 
         // Redirect to results page
-        window.location.href = 'Senatorial.html';
+        window.location.href = 'Governorship.html';
     }
 </script>
 <h6 style="margin-left: 1150px;"><img src="c3dlogo.png" alt="logo" height="50px" width="120px"/><br/>Powered by Creativ360dymensionz!</h6>
